@@ -99,5 +99,10 @@ class Processes:
         date = "2020-05-17" #str(datetime.datetime.now().date()
         return MongoOperations.check_for_todays_date_if_present(table_name, date)
     
+     def check_for_day_before_sterday_date_if_present(process_id):
+        table_name = JobInfo.get_process_name(process_id)
+        date = "2020-05-17" #str(datetime.datetime.now().date()
+        return MongoOperations.check_for_todays_date_if_present(table_name, date)
+    
     
 
